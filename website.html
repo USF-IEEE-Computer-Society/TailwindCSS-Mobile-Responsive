@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Full Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav >
+      <div >
+        <div >
+          <h1 >My Website</h1>
+          <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" 
+                  class="lg:hidden">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <ul class="hidden space-x-4 lg:flex">
+            <li><a href="#" >Home</a></li>
+            <li><a href="#" >About</a></li>
+            <li><a href="#" >Services</a></li>
+            <li><a href="#" >Portfolio</a></li>
+            <li><a href="#" >Contact</a></li>
+          </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="mt-4 hidden space-y-2 lg:hidden">
+          <li><a href="#" >Home</a></li>
+          <li><a href="#" >About</a></li>
+          <li><a href="#" >Services</a></li>
+          <li><a href="#" >Portfolio</a></li>
+          <li><a href="#" >Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header >
+      <h1 >Welcome to My Website</h1>
+      <p >A place to showcase Tailwind CSS styling</p>
+      <a href="#contact" >Get in Touch</a>
+    </header>
+
+    <!-- About Section -->
+    <section >
+      <div >
+        <h2 >About Us</h2>
+        <p >We are dedicated to building amazing websites using modern design principles.</p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section >
+      <div >
+        <h3 >Web Design</h3>
+        <p >Creating visually appealing and functional websites.</p>
+      </div>
+      <div >
+        <h3 >Development</h3>
+        <p >Building scalable and efficient applications.</p>
+      </div>
+      <div >
+        <h3>SEO Optimization</h3>
+        <p >Improving website visibility in search engines.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section >
+      <h2 >Our Work</h2>
+      <div >
+        <div >Project 1</div>
+        <div >Project 2</div>
+        <div >Project 3</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" >
+      <h2 >Contact Us</h2>
+      <form >
+        <input type="text" placeholder="Your Name"  />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit" >Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer >
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
